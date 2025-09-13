@@ -31,7 +31,6 @@ export default function Hero() {
                     <p className="text-accent-content text-xs">Satisfaction guaranteed</p>
                 </div>
             </div>
-
         </div>
     );
 }
