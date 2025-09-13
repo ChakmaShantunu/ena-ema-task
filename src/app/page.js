@@ -2,6 +2,7 @@ import Image from "next/image";
 import Hero from "./components/Hero/Hero";
 import Showcase from "./components/Showcase/Showcase";
 import WhyTrustUsSection from "./components/WhyTrustUsSection/WhyTrustUsSection";
+import CaseStudies from "./components/CaseStudies/CaseStudies";
 
 // min-h-[7893px]
 export default function Home() {
@@ -15,6 +16,9 @@ export default function Home() {
       </div>
       <div>
         <WhyTrustUsSection></WhyTrustUsSection>
+      </div>
+      <div className="bg-[#0a0f0d]">
+        <CaseStudies></CaseStudies>
       </div>
     </div>
   );

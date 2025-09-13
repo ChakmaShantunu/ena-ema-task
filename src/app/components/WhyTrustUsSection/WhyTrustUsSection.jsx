@@ -36,12 +36,12 @@ export default function WhyTrustUsSection() {
 
     return (
         <div className='mt-12 md:mt-24 lg:mt-36'>
-            <div className='space-y-8'>
+            <div className='space-y-8 mx-[10px] md:mx-[160px]'>
                 <h1 className='text-4xl lg:text-5xl text-center manrope font-medium text-accent'>Why Businesses <span className='text-secondary'>Trust Us</span> With Their Designs</h1>
                 <p className='lg:text-base text-center general-sans text-accent'>We combine proven conversion frameworks with agency-level design to deliver results that matter.</p>
             </div>
 
-            <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-9 mt-12 lg:mt-36 lg:pb-32 max-w-9/12 mx-auto'>
+            <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-9 mt-12 lg:mt-36 lg:pb-32 max-w-11/12 mx-auto'>
                 {
                     services.map((service, index) => {
                         return (
