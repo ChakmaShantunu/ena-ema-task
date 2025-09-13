@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+@import url("https://fonts.cdnfonts.com/css/general-sans");
 @import "tailwindcss";
 @plugin "daisyui";
 
@@ -9,12 +11,22 @@
   name: "light";
   default: true;
   --color-primary: #192420;
-  --color-secondary: #1FFFA5;
-  
+  --color-secondary: #1fffa5;
 
   /* bg */
-  --color-neutral: #151E1B;
+  --color-neutral: #151e1b;
 
   /* text color */
   --color-accent: #f5f5f5;
+}
+
+.manrope {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.general-sans {
+  font-family: "General Sans", sans-serif;
 }
