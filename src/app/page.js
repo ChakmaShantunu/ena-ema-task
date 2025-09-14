@@ -8,6 +8,7 @@ import Discount from "./components/Discount/Discount";
 import Landing from "./components/LandingPage/Landing";
 import AboutUs from "./components/AboutUs/AboutUs";
 import FaqSection from "./components/FaqSection/FaqSection";
+import Visitors from "./components/Visitors/Visitors";
 
 // min-h-[7893px]
 export default function Home() {
@@ -29,6 +30,10 @@ export default function Home() {
         <Landing></Landing>
         <AboutUs></AboutUs>
         <FaqSection></FaqSection>
+        <Visitors></Visitors>
+      </div>
+      <div>
+        
       </div>
     </div>
   );

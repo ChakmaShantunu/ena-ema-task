@@ -14,8 +14,12 @@ export default function Hero() {
                     <p className="text-accent-content flex items-center gap-2 bg-primary px-4 py-2 rounded-4xl relative z-20 text-sm general-sans md:text-base lg:text-lg opacity-95"><img src="/images/sparkle.png" width={16} height={16} alt="sparkle" />Trusted by 30+ startups & entrepreneurs worldwide</p>
                 </div>
             </div>
-            <h1 className="text-white mt-6 mb-4 text-xl md:text-4xl lg:text-7xl text-center manrope font-bold">Strategic Landing Pages That Convert From Just $200</h1>
-            <p className="text-center text-[#f5f5f5] md:max-w-6/12 lg:max-w-7/12 mx-auto">Stop wasting traffic on generic pages. We deliver premium, conversion-focused landing pages designed, developed, and launched in just 5 days.</p>
+
+            <div className="max-w-6xl mx-auto">
+                <h1 className="text-white mt-6 mb-4 text-xl md:text-4xl lg:text-7xl text-center manrope font-bold">Strategic Landing Pages That Convert From Just $200</h1>
+                <p className="text-center text-[#f5f5f5] md:max-w-6/12 lg:max-w-7/12 mx-auto">Stop wasting traffic on generic pages. We deliver premium, conversion-focused landing pages designed, developed, and launched in just 5 days.</p>
+            </div>
+
             <CustomCard></CustomCard>
             <div className="flex flex-wrap justify-center items-center gap-12 mt-3 text-center">
                 <div className="flex items-center justify-center gap-2">
