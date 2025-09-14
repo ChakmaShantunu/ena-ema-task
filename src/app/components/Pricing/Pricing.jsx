@@ -43,7 +43,7 @@ export default function Pricing() {
         },
     ];
     return (
-        <div className='lg:max-w-[1440px] mx-auto px-4'>
+        <div className='lg:max-w-[1440px] mx-auto px-4 lg:px-0'>
             <div className='lg:mt-32 text-center lg:text-left'>
                 <h1 className='text-3xl md:text-4xl lg:text-5xl font-medium text-accent'>
                     Simple, Transparent Pricing — <span className='text-secondary'>Choose Your Plan</span>
