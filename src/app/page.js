@@ -4,6 +4,7 @@ import Showcase from "./components/Showcase/Showcase";
 import WhyTrustUsSection from "./components/WhyTrustUsSection/WhyTrustUsSection";
 import CaseStudies from "./components/CaseStudies/CaseStudies";
 import Pricing from "./components/Pricing/Pricing";
+import Discount from "./components/Discount/Discount";
 
 // min-h-[7893px]
 export default function Home() {
@@ -21,6 +22,7 @@ export default function Home() {
       <div className="bg-[#0a0f0d]">
         <CaseStudies></CaseStudies>
         <Pricing></Pricing>
+        <Discount></Discount>
       </div>
     </div>
   );

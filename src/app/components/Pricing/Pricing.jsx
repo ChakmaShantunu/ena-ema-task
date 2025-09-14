@@ -43,7 +43,7 @@ export default function Pricing() {
         },
     ];
     return (
-        <div className='lg:max-w-[1440px] mx-auto px-4 md:px-6 lg:px-8'>
+        <div className='lg:max-w-[1440px] mx-auto px-4'>
             <div className='lg:mt-32 text-center lg:text-left'>
                 <h1 className='text-3xl md:text-4xl lg:text-5xl font-medium text-accent'>
                     Simple, Transparent Pricing — <span className='text-secondary'>Choose Your Plan</span>
@@ -53,7 +53,7 @@ export default function Pricing() {
                 </p>
             </div>
 
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:pb-12'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-9 lg:pb-12'>
                 {pricingData.map((data, index) => (
                     <div
                         key={index}
@@ -64,7 +64,7 @@ export default function Pricing() {
                     >
                         <div className="card-body relative">
                             {data.mostPopular && (
-                                <span className="absolute -top-12 left-16 -translate-x-1/2 
+                                <span className="absolute -top-8 lg:-top-12 left-16 -translate-x-1/2 
                              bg-primary border border-secondary text-accent text-xs md:text-sm 
                              font-semibold px-3 py-1 rounded-full">
                                     Most Popular
