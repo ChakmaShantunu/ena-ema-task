@@ -16,7 +16,7 @@ export default function Discount() {
                     </p>
                 </div>
             </div>
-            <div className="bg-primary shadow-sm rounded-2xl">
+            <div className="bg-primary mb-32 shadow-sm rounded-2xl">
                 <div className='flex justify-center items-center'>
                     <div className='py-6 md:py-8 lg:py-12 px-4 md:px-8 lg:px-16 text-center'>
 
@@ -40,7 +40,6 @@ export default function Discount() {
                                 </span>
                             </button>
                         </div>
-
                     </div>
                 </div>
             </div>

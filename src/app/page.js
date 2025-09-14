@@ -5,6 +5,7 @@ import WhyTrustUsSection from "./components/WhyTrustUsSection/WhyTrustUsSection"
 import CaseStudies from "./components/CaseStudies/CaseStudies";
 import Pricing from "./components/Pricing/Pricing";
 import Discount from "./components/Discount/Discount";
+import Landing from "./components/LandingPage/Landing";
 
 // min-h-[7893px]
 export default function Home() {
@@ -23,6 +24,7 @@ export default function Home() {
         <CaseStudies></CaseStudies>
         <Pricing></Pricing>
         <Discount></Discount>
+        <Landing></Landing>
       </div>
     </div>
   );
