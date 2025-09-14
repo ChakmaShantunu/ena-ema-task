@@ -41,7 +41,7 @@ export default function WhyTrustUsSection() {
                 <p className='lg:text-base text-center general-sans text-accent'>We combine proven conversion frameworks with agency-level design to deliver results that matter.</p>
             </div>
 
-            <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-9 mt-12 lg:mt-36 lg:pb-32 max-w-11/12 mx-auto'>
+            <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-9 mt-12 lg:mt-36 lg:pb-32 lg:max-w-[1440px] mx-auto'>
                 {
                     services.map((service, index) => {
                         return (
