@@ -6,6 +6,8 @@ import CaseStudies from "./components/CaseStudies/CaseStudies";
 import Pricing from "./components/Pricing/Pricing";
 import Discount from "./components/Discount/Discount";
 import Landing from "./components/LandingPage/Landing";
+import AboutUs from "./components/AboutUs/AboutUs";
+import FaqSection from "./components/FaqSection/FaqSection";
 
 // min-h-[7893px]
 export default function Home() {
@@ -25,6 +27,8 @@ export default function Home() {
         <Pricing></Pricing>
         <Discount></Discount>
         <Landing></Landing>
+        <AboutUs></AboutUs>
+        <FaqSection></FaqSection>
       </div>
     </div>
   );
