@@ -7,32 +7,32 @@ import "slick-carousel/slick/slick-theme.css";
 export default function AboutUs() {
     const feedbacks = [
         {
-            name: "John Doe",
-            position: "Frontend Developer",
-            image: "/images/user1.jpg",
+            name: "Sarah Johnson",
+            position: "SaaS Founder",
+            image: "/images/Ellipse 3.png",
             rating: 5,
-            feedback: "This course completely changed the way I approach projects. Highly recommended!",
+            feedback: "They delivered a landing page better than agencies charging 10x more. My conversion rate doubled within the first week!",
         },
         {
-            name: "Jane Smith",
-            position: "UI/UX Designer",
-            image: "/images/user2.jpg",
+            name: "Mike Chen",
+            position: "Fitness Coach",
+            image: "/images/Ellipse.png",
             rating: 5,
-            feedback: "Amazing content and very practical. I loved every part of it.",
+            feedback: "Fast, reliable, and professional. My conversions doubled and I'm getting more quality leads than ever before.",
         },
         {
-            name: "Alice Johnson",
-            position: "Project Manager",
-            image: "/images/user3.jpg",
+            name: "Amanda Rodriguez",
+            position: "E-Commerce Owner",
+            image: "/images/Ellipse 2.png",
             rating: 5,
-            feedback: "Clear explanation and structured approach. Great learning experience.",
+            feedback: "Best investment for my business. The ROI was immediate and substantial. Will definitely order again.",
         },
         {
-            name: "Bob Williams",
-            position: "Backend Developer",
-            image: "/images/user4.jpg",
+            name: "David Lee",
+            position: "SaaS Founder",
+            image: "/images/Ellipse 4.png",
             rating: 5,
-            feedback: "Hands-on examples made it very easy to understand complex topics.",
+            feedback: "They delivered a landing page better than agencies charging 10x more. My conversion rate doubled within the first week!",
         },
     ];
 
@@ -40,13 +40,13 @@ export default function AboutUs() {
         dots: false,
         infinite: false,        
         speed: 500,
-        slidesToShow: 4,          
+        slidesToShow: 3,          
         slidesToScroll: 1,
         arrows: false,
         draggable: true,
         swipeToSlide: true,
-        centerMode: true,        
-        centerPadding: "70px", 
+        centerMode: false, 
+        centerPadding: "70px",       
         rlt: true,    
         responsive: [
             { breakpoint: 1024, settings: { slidesToShow: 2, centerPadding: "50px" } },
@@ -56,11 +56,11 @@ export default function AboutUs() {
 
 
     return (
-        <section className="py-16 bg-[#1827228a] text-white">
+        <section className="py-16 bg-[#1827228a] text-accent">
             <div className="max-w-[1440px] mx-auto px-4">
                 <div className="max-w-[1440px] mx-auto">
-                    <h2 className="text-4xl font-bold mb-4">What Our Students Say</h2>
-                    <p className="text-gray-400 mb-12">
+                    <h1 className="manrope text-5xl font-medium text-accent">What Our Clients Are Saying <span className="text-secondary">About Us</span></h1>
+                    <p className="general-sans text-accent mt-2 mb-12">
                         Real feedback from students who have successfully completed our program.
                     </p>
                 </div>
@@ -72,7 +72,7 @@ export default function AboutUs() {
                                     {/* 5-star rating */}
                                     <div className="flex mb-3">
                                         {Array.from({ length: f.rating }).map((_, i) => (
-                                            <span key={i} className="text-yellow-400 text-lg">★</span>
+                                            <span key={i} className="text-secondary text-lg">★</span>
                                         ))}
                                         {Array.from({ length: 5 - f.rating }).map((_, i) => (
                                             <span key={i} className="text-gray-600 text-lg">★</span>
@@ -84,11 +84,7 @@ export default function AboutUs() {
 
                                     {/* User info */}
                                     <div className="flex items-center gap-4">
-                                        <img
-                                            src={f.image}
-                                            alt={f.name}
-                                            className="w-12 h-12 rounded-full object-cover"
-                                        />
+                                        <img src={f.image} alt="" />
                                         <div className="text-left">
                                             <p className="font-semibold">{f.name}</p>
                                             <p className="text-gray-400 text-sm">{f.position}</p>

@@ -18,7 +18,7 @@
 
   /* text color */
   --color-accent: #f5f5f5;
-  --color-accent-content: #B2B2B2;
+  --color-accent-content: #b2b2b2;
 }
 
 .manrope {
@@ -32,3 +32,5 @@
 .highlight-span {
   box-shadow: 0 50px 560px 120px rgba(31, 255, 165, 0.144);
 }
+
+

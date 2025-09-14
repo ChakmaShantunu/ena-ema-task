@@ -3,11 +3,11 @@ import React from 'react'
 export default function FaqSection() {
     return (
         <div>
-            <div className="py-32 bg-[#1827228a] text-white">
-                <div className='max-w-6xl mx-auto'>
+            <div className="py-32 bg-[#1827228a] text-accent">
+                <div className='w-11/12 md:max-w-4xl lg:max-w-6xl mx-auto'>
                     {/* List Description */}
                     <div className="mb-4 text-center">
-                        <h2 className="text-3xl sm:text-4xl lg:text-5xl text-accent manrope font-bold mb-12">Got Questions?  We’ve Got The Answers</h2>
+                        <h2 className="text-4xl text-center lg:text-5xl text-accent manrope font-medium mb-12">Got Questions<span className='text-secondary'>?</span>  We’ve Got The Answers</h2>
                     </div>
 
                     <div className='space-y-6 px-4 md:px-0'>

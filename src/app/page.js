@@ -9,6 +9,7 @@ import Landing from "./components/LandingPage/Landing";
 import AboutUs from "./components/AboutUs/AboutUs";
 import FaqSection from "./components/FaqSection/FaqSection";
 import Visitors from "./components/Visitors/Visitors";
+import Footer from "./Footer/Footer";
 
 // min-h-[7893px]
 export default function Home() {
@@ -32,9 +33,7 @@ export default function Home() {
         <FaqSection></FaqSection>
         <Visitors></Visitors>
       </div>
-      <div>
-        
-      </div>
+      <Footer></Footer>
     </div>
   );
 }
