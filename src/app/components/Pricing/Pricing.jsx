@@ -1,5 +1,7 @@
-import React from 'react'
+"use client";
+import React from "react";
 import { FaArrowRight } from "react-icons/fa6";
+import { motion } from "framer-motion";
 
 export default function Pricing() {
     const pricingData = [
@@ -42,25 +44,50 @@ export default function Pricing() {
             ],
         },
     ];
+
+    // Framer Motion variants
+    const zoomUp = {
+        hidden: { opacity: 0, y: 50, scale: 0.9 },
+        visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.6, ease: "easeOut" } },
+    };
+
+    const container = {
+        hidden: {},
+        visible: { transition: { staggerChildren: 0.2 } }, // stagger animation for cards
+    };
+
     return (
         <div className='lg:max-w-[1440px] mx-auto px-4 lg:px-0'>
-            <div className='lg:mt-32 text-center lg:text-left'>
+            <motion.div
+                className='lg:mt-32 text-center lg:text-left'
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: false }}
+                variants={zoomUp}
+            >
                 <h1 className='text-3xl md:text-4xl lg:text-5xl font-medium text-accent'>
                     Simple, Transparent Pricing — <span className='text-secondary'>Choose Your Plan</span>
                 </h1>
                 <p className='text-accent text-sm md:text-base lg:mt-2 lg:mb-12'>
                     No hidden fees, no surprises. Just premium landing pages at unbeatable prices.
                 </p>
-            </div>
+            </motion.div>
 
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-9 lg:pb-12'>
+            <motion.div
+                className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-9 lg:pb-12'
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: false }}
+                variants={container}
+            >
                 {pricingData.map((data, index) => (
-                    <div
+                    <motion.div
                         key={index}
                         className="card shadow-sm bg-primary px-4 py-6 lg:px-6 lg:py-8 
                    hover:border hover:border-secondary 
                    transform transition-transform duration-300 ease-in-out 
                    hover:scale-105 group cursor-pointer"
+                        variants={zoomUp}
                     >
                         <div className="card-body relative">
                             {data.mostPopular && (
@@ -107,9 +134,9 @@ export default function Pricing() {
                                 </button>
                             </div>
                         </div>
-                    </div>
+                    </motion.div>
                 ))}
-            </div>
+            </motion.div>
         </div>
     )
 }

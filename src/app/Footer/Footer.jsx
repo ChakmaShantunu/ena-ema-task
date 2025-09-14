@@ -1,8 +1,21 @@
+"use client";
 import React from 'react'
+import { motion } from "framer-motion";
 
 export default function Footer() {
+    const fadeUpZoom = {
+        hidden: { opacity: 0, y: 50, scale: 0.95 },
+        visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.6, ease: "easeOut" } },
+    };
+
     return (
-        <div className='bg-secondary'>
+        <motion.div
+            className='bg-secondary'
+            variants={fadeUpZoom}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+        >
             <div className='flex md:flex-row justify-between items-center gap-6 md:gap-0 py-8 md:py-16 w-11/12 mx-auto'>
 
                 {/* Logo */}
@@ -29,7 +42,6 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-        </div>
-
+        </motion.div>
     )
 }

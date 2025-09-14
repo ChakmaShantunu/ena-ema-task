@@ -1,9 +1,23 @@
-import React from 'react'
+"use client";
+import React from 'react';
+import { motion } from 'framer-motion';
 
 export default function Discount() {
+    // Animation variants
+    const zoomUp = {
+        hidden: { opacity: 0, y: 50, scale: 0.9 },
+        visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.6, ease: "easeOut" } },
+    };
+
     return (
         <div className='lg:max-w-[1440px] mx-auto px-4 lg:px-0'>
-            <div className='flex items-center my-12'>
+            <motion.div
+                className='flex items-center my-12'
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: false }}
+                variants={zoomUp}
+            >
                 <div className=''>
                     <img src="images/delivery.png" alt="" />
                 </div>
@@ -15,11 +29,17 @@ export default function Discount() {
                         We only onboard 5 new clients per month. 2 spots left for this month — secure yours today.
                     </p>
                 </div>
-            </div>
-            <div className="bg-primary mb-32 shadow-sm rounded-2xl">
+            </motion.div>
+
+            <motion.div
+                className="bg-primary mb-32 shadow-sm rounded-2xl"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: false }}
+                variants={zoomUp}
+            >
                 <div className='flex justify-center items-center'>
                     <div className='py-6 md:py-8 lg:py-12 px-4 md:px-8 lg:px-16 text-center'>
-
                         {/* Headline */}
                         <h1 className='text-xl md:text-3xl lg:text-5xl text-accent manrope'>
                             Special Offer For Early Clients
@@ -42,8 +62,7 @@ export default function Discount() {
                         </div>
                     </div>
                 </div>
-            </div>
-
+            </motion.div>
         </div>
-    )
+    );
 }
