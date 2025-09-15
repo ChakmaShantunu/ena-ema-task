@@ -11,7 +11,7 @@ import FaqSection from "./components/FaqSection/FaqSection";
 import Visitors from "./components/Visitors/Visitors";
 import Footer from "./Footer/Footer";
 
-// min-h-[7893px]
+
 export default function Home() {
   return (
     <div className='bg-neutral'>

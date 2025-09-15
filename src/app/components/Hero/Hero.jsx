@@ -39,7 +39,7 @@ export default function Hero() {
                     <span className="bg-secondary w-[370px] h-6 px-4 py-2 block rounded-4xl absolute bottom-3.5 left-1/2 -translate-x-1/2 z-10 highlight-span md:w-[420px] md:h-7 lg:w-[461px] lg:h-8"></span>
 
                     <p className="text-accent-content flex items-center gap-2 bg-primary px-4 py-2 rounded-4xl relative z-20 text-sm general-sans md:text-base lg:text-lg opacity-95">
-                        <img src="/images/sparkle.png" width={16} height={16} alt="sparkle" />
+                        <img src="images/Sparkle.png" width={16} height={16} alt="sparkle" />
                         Trusted by 30+ startups & entrepreneurs worldwide
                     </p>
                 </div>
