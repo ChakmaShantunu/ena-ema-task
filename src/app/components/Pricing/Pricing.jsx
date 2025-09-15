@@ -65,10 +65,10 @@ export default function Pricing() {
                 viewport={{ once: false }}
                 variants={zoomUp}
             >
-                <h1 className='text-3xl md:text-4xl lg:text-5xl font-medium text-accent'>
+                <h1 className='manrope text-3xl md:text-4xl lg:text-5xl font-medium text-accent'>
                     Simple, Transparent Pricing — <span className='text-secondary'>Choose Your Plan</span>
                 </h1>
-                <p className='text-accent text-sm md:text-base lg:mt-2 lg:mb-12'>
+                <p className='general-sans text-accent text-sm md:text-base lg:mt-2 lg:mb-12'>
                     No hidden fees, no surprises. Just premium landing pages at unbeatable prices.
                 </p>
             </motion.div>
@@ -91,7 +91,7 @@ export default function Pricing() {
                     >
                         <div className="card-body relative">
                             {data.mostPopular && (
-                                <span className="absolute -top-8 lg:-top-12 left-16 -translate-x-1/2 
+                                <span className="general-sans absolute -top-8 lg:-top-12 left-16 -translate-x-1/2 
                              bg-primary border border-secondary text-accent text-xs md:text-sm 
                              font-semibold px-3 py-1 rounded-full">
                                     Most Popular
@@ -99,11 +99,11 @@ export default function Pricing() {
                             )}
 
                             <div className="flex justify-between items-center">
-                                <h2 className="font-bold text-accent text-2xl md:text-2xl lg:text-2xl">{data.title}</h2>
-                                <span className="text-2xl text-secondary font-medium">${data.price}</span>
+                                <h2 className="manrope font-bold text-accent text-2xl md:text-2xl lg:text-2xl">{data.title}</h2>
+                                <span className="general-sans text-2xl text-secondary font-medium">${data.price}</span>
                             </div>
 
-                            <p className='text-accent text-xs md:text-sm mt-2'>{data.description}</p>
+                            <p className='general-sans text-accent text-xs md:text-sm mt-2'>{data.description}</p>
 
                             <div className="w-full h-[1px] bg-[#2a3c36] my-4"></div>
 
@@ -111,7 +111,7 @@ export default function Pricing() {
                                 {data.features.map((feature, i) => (
                                     <li
                                         key={i}
-                                        className='list-disc list-inside text-accent-content text-xs md:text-sm marker:text-secondary marker:text-lg'
+                                        className='general-sans list-disc list-inside text-accent-content text-xs md:text-sm marker:text-secondary marker:text-lg'
                                     >
                                         {feature}
                                     </li>
@@ -120,7 +120,7 @@ export default function Pricing() {
 
                             <div className="mt-6 flex justify-center items-center">
                                 <button
-                                    className="w-full h-[54px] bg-[#003d25] text-secondary font-medium rounded flex items-center justify-center gap-2 
+                                    className="general-sans w-full h-[54px] bg-[#003d25] text-secondary font-medium rounded flex items-center justify-center gap-2 
               group-hover:text-[#002013] transition-all duration-300 ease-in-out 
               group-hover:bg-gradient-to-b group-hover:from-[#1fffa5] group-hover:to-[#ffffffd5] 
               group-hover:border group-hover:border-[#1fffa5] 

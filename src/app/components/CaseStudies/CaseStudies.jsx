@@ -30,8 +30,8 @@ export default function CaseStudies() {
                 viewport={{ once: true }}
                 variants={fadeUp}
             >
-                <h1 className="font-medium lg:text-5xl">Case Studies</h1>
-                <p>See the designs that delivered results</p>
+                <h1 className="manrope font-medium lg:text-5xl">Case Studies</h1>
+                <p className="general-sans text-base mt-2">See the designs that delivered results</p>
             </motion.div>
 
             {/* Cards Container */}

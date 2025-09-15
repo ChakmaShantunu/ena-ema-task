@@ -55,8 +55,8 @@ export default function WhyTrustUsSection() {
                     >
                         <div className="py-8 px-6">
                             <img src={service.logo} alt={service.title} />
-                            <h2 className="text-base text-accent font-medium mt-6 mb-3">{service.title}</h2>
-                            <p className="text-accent-content text-sm">{service.description}</p>
+                            <h2 className="manrope text-base text-accent font-medium mt-6 mb-3">{service.title}</h2>
+                            <p className="general-sans text-accent-content text-sm">{service.description}</p>
                         </div>
                     </motion.div>
                 ))}

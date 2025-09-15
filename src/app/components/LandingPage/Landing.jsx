@@ -47,7 +47,7 @@ export default function Section() {
                     From Idea to Live Landing Page in <span className="text-secondary">Just 5 Days</span>
                 </motion.h2>
                 <motion.p
-                    className="text-accent mb-12 text-base"
+                    className="general-sans text-accent mb-12 text-base"
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: false }}
@@ -78,7 +78,7 @@ export default function Section() {
                                 <h3 className="text-xl font-semibold mb-2 general-sans">{card.title}</h3>
                                 <p className="text-gray-400 general-sans">{card.description}</p>
                                 <span
-                                    className="absolute lg:-top-3 left-1/2 -translate-x-1/2 
+                                    className="general-sans absolute lg:-top-3 left-1/2 -translate-x-1/2 
                              bg-primary border border-secondary text-accent text-xs md:text-sm 
                              font-semibold px-3 py-1 rounded-full"
                                 >

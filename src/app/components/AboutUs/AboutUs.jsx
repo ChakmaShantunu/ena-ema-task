@@ -49,6 +49,7 @@ export default function AboutUs() {
         centerMode: false,
         centerPadding: "70px",
         rlt: true,
+        autoplay: true,
         responsive: [
             { breakpoint: 1024, settings: { slidesToShow: 2, centerPadding: "50px" } },
             { breakpoint: 640, settings: { slidesToShow: 1, centerPadding: "30px" } },
@@ -89,7 +90,7 @@ export default function AboutUs() {
                                 viewport={{ once: false }}
                                 variants={zoomUp}
                             >
-                                <div className="bg-[#192420] w-full rounded-xl p-6 h-full flex flex-col justify-between">
+                                <div className="bg-[#192420] w-full md:h-[262px] lg:[262px] rounded-xl p-6 h-full flex flex-col justify-between">
                                     {/* 5-star rating */}
                                     <div className="flex mb-3">
                                         {Array.from({ length: f.rating }).map((_, i) => (
@@ -107,8 +108,8 @@ export default function AboutUs() {
                                     <div className="flex items-center gap-4">
                                         <img src={f.image} alt={f.name} />
                                         <div className="text-left">
-                                            <p className="font-semibold">{f.name}</p>
-                                            <p className="text-gray-400 text-sm">{f.position}</p>
+                                            <p className="general-sans font-semibold">{f.name}</p>
+                                            <p className="general-sans text-gray-400 text-sm">{f.position}</p>
                                         </div>
                                     </div>
                                 </div>

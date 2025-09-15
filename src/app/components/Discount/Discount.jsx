@@ -22,10 +22,10 @@ export default function Discount() {
                     <img src="images/delivery.png" alt="" />
                 </div>
                 <div className='ml-4 space-y-2'>
-                    <h1 className='text-3xl md:text-4xl lg:text-5xl font-medium text-accent'>
+                    <h1 className='manrope text-3xl md:text-4xl lg:text-5xl font-medium text-accent'>
                         Limited Availability
                     </h1>
-                    <p className='text-accent text-sm md:text-base'>
+                    <p className='general-sans text-accent text-sm md:text-base'>
                         We only onboard 5 new clients per month. 2 spots left for this month — secure yours today.
                     </p>
                 </div>
@@ -53,7 +53,7 @@ export default function Discount() {
                         {/* Button */}
                         <div className="flex justify-center items-center">
                             <button
-                                className="px-12 h-[54px] bg-gradient-to-b from-[#1fffa5] to-[#ffffffd5] text-[#002013] font-medium rounded flex items-center justify-center gap-2 shadow-[inset_0_0_12px_#1fffa540,0_4px_12px_#ffffff80] transition-all duration-300 ease-in-out hover:shadow-[inset_0_0_18px_#1fffa540,0_6px_16px_#ffffff80] hover:scale-[1.02]">
+                                className="general-sans px-12 h-[54px] bg-gradient-to-b from-[#1fffa5] to-[#ffffffd5] text-[#002013] font-medium rounded flex items-center justify-center gap-2 shadow-[inset_0_0_12px_#1fffa540,0_4px_12px_#ffffff80] transition-all duration-300 ease-in-out hover:shadow-[inset_0_0_18px_#1fffa540,0_6px_16px_#ffffff80] hover:scale-[1.02]">
                                 Claim my 10% discount
                                 <span>
                                     <img src="/images/arrow.png" alt="" />
