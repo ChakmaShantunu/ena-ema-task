@@ -10,6 +10,15 @@ export default function Hero() {
         visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
     };
 
+    const zoomUp = {
+        hidden: { opacity: 0, scale: 0.8 },
+        visible: {
+            opacity: 1,
+            scale: 1,
+            transition: { duration: 0.6, ease: "easeOut" },
+        },
+    };
+
     return (
         <div>
             <motion.div
@@ -29,11 +38,11 @@ export default function Hero() {
             </motion.div>
 
             <motion.div
-                className="flex justify-center items-center"
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
-                variants={fadeUp}
+                variants={zoomUp}
+                className="flex justify-center items-center"
             >
                 <div className="relative inline-block mt-10 md:mt-15 lg:mt-20">
                     <span className="bg-secondary w-[370px] h-6 px-4 py-2 block rounded-4xl absolute bottom-3.5 left-1/2 -translate-x-1/2 z-10 highlight-span md:w-[420px] md:h-7 lg:w-[461px] lg:h-8"></span>
@@ -50,7 +59,7 @@ export default function Hero() {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
-                variants={fadeUp}
+                variants={zoomUp}
             >
                 <h1 className="text-white mt-6 mb-4 text-4xl md:text-4xl lg:text-7xl text-center manrope font-bold">
                     Strategic Landing Pages That Convert From Just{" "}
