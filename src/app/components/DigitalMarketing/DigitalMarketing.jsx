@@ -8,7 +8,7 @@ const App = () => {
         visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.6, ease: "easeOut" } },
     };
     return (
-        <div className="grid lg:grid-cols-3 gap-4 bg-accent py-24">
+        <div className="grid lg:grid-cols-3 gap-4 bg-accent py-32">
             <div className="space-y-12 text-sm relative">
                 <div className="absolute top-1/4 left-2/5">
                     <p className="border border-black p-2 max-w-[349px]">Researching and writing relevant, semantically tagged articles that readers will find interesting, useful and share, hence bettering your company’s position on the internet.</p>
@@ -33,8 +33,22 @@ const App = () => {
                 <div className="absolute top-9/12 left-1/5">
                     <p className="border border-black p-2 max-w-[349px]">Researching and writing relevant, semantically tagged articles that readers will find interesting, useful and share, hence bettering your company’s position on the internet.</p>
                 </div>
+                <div className="relative top-60 -left-17">
+                    <div className="absolute top-89 left-[410px]">
+                        <img src="/images/Arrow.png" alt="" className="rotate-90" />
+                    </div>
+                    <div className="absolute top-89 left-4/6 w-82 h-0.5 bg-black"></div>
+                    <div className="absolute top-89 left-[742px] w-0.5 h-6 bg-black"></div>
+                </div>
                 <div className="absolute top-11/12 left-5/12">
                     <p className="border border-black p-2 max-w-[349px]">Researching and writing relevant, semantically tagged articles that readers will find interesting, useful and share, hence bettering your company’s position on the internet.</p>
+                </div>
+                <div className="relative top-[590px] left-28">
+                    <div className="absolute top-78 left-[412px]">
+                        <img src="/images/Arrow 1.png" alt="" className="" />
+                    </div>
+                    <div className="absolute top-89 left-4/6 w-96 h-0.5 bg-black"></div>
+                    <div className="absolute top-65 left-[798px] w-0.5 h-24 bg-black"></div>
                 </div>
             </div>
             <motion.div
