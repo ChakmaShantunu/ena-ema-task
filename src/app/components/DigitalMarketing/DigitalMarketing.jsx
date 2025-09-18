@@ -8,7 +8,9 @@ const App = () => {
         visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.6, ease: "easeOut" } },
     };
     return (
-        <div className="grid lg:grid-cols-3 gap-4 bg-accent py-32">
+        <div className="grid lg:grid-cols-3 gap-4 bg-accent pt-42 pb-52 mx-auto overflow-hidden">
+
+            {/* Left side */}
             <div className="space-y-12 text-sm relative">
                 <div className="absolute top-1/4 left-2/5">
                     <p className="border border-black p-2 max-w-[349px]">Researching and writing relevant, semantically tagged articles that readers will find interesting, useful and share, hence bettering your company’s position on the internet.</p>
@@ -51,16 +53,20 @@ const App = () => {
                     <div className="absolute top-65 left-[798px] w-0.5 h-24 bg-black"></div>
                 </div>
             </div>
+
+            {/* MIddle side */}
             <motion.div
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: false }}
                 variants={fadeZoomUp}
                 className="bg-gray-100 py-10 min-h-screen">
-                <h1 className="text-center text-2xl font-bold mb-6">
-                    Digital Marketing Overview
-                </h1>
-                <p className="text-center">Lorem ipsum dolor sit amet consectetur. Fringilla mauris vel felis vitae. Id quisque urna sed eget facilisi. Nulla pretium odio dictumst aliquet.</p>
+                <div className="space-y-4">
+                    <h1 className="text-center text-5xl font-bold">
+                        Digital Marketing Overview
+                    </h1>
+                    <p className="text-center">Lorem ipsum dolor sit amet consectetur. Fringilla mauris vel felis vitae. Id quisque urna sed eget facilisi. Nulla pretium odio dictumst aliquet.</p>
+                </div>
 
                 {/* Circle Container */}
                 <div
@@ -86,7 +92,7 @@ const App = () => {
                             📘
                         </div>
                     </div>
-                    <div className="absolute text-sm font-medium text-gray-800 top-[20%] left-[100%]">
+                    <div className="absolute text-sm font-medium text-gray-800 top-[15%] left-[100%]">
                         Facebook
                     </div>
 
@@ -149,9 +155,57 @@ const App = () => {
                     <div className="absolute text-sm font-medium text-gray-800 top-[20%] left-[-10%]">
                         LinkedIn
                     </div>
+
                 </div>
             </motion.div>
-            <div></div>
+
+            {/* Right Side */}
+            <div className="space-y-12 text-sm relative">
+                <div className="relative -top-29 right-96">
+                    <div className="absolute top-69 left-[408px]">
+                        <img src="/images/Arrow.png" alt="" className="rotate-90" />
+                    </div>
+                    <div className="absolute top-69 left-1/12 w-91 h-0.5 bg-black"></div>
+                    <div className="absolute top-69 left-13 w-0.5 h-6 bg-black"></div>
+                </div>
+                <div className="absolute top-44 -left-32">
+                    <p className="border border-black p-2 max-w-[349px]">Researching and writing relevant, semantically tagged articles that readers will find interesting, useful and share, hence bettering your company’s position on the internet.</p>
+                </div>
+
+                <div className="relative -top-6 right-26">
+                    <div className="absolute top-69 left-[408px]">
+                        <img src="/images/Arrow.png" alt="" className="rotate-90" />
+                    </div>
+                    <div className="absolute top-69 left-1/12 w-91 h-0.5 bg-black"></div>
+                    <div className="absolute top-69 left-13 w-0.5 h-6 bg-black"></div>
+                </div>
+                <div className="absolute top-80 left-1/5">
+                    <p className="border border-black p-2 max-w-[349px]">Researching and writing relevant, semantically tagged articles that readers will find interesting, useful and share, hence bettering your company’s position on the internet.</p>
+                </div>
+
+                <div className="relative top-48 right-8">
+                    <div className="absolute top-69 left-[408px]">
+                        <img src="/images/Arrow.png" alt="" className="rotate-90" />
+                    </div>
+                    <div className="absolute top-69 left-1/12 w-91 h-0.5 bg-black"></div>
+                    {/* <div className="absolute top-69 left-13 w-0.5 h-6 bg-black"></div> */}
+                </div>
+                <div className="absolute top-7/12 left-[208px]">
+                    <p className="border border-black p-2 max-w-[349px]">Researching and writing relevant, semantically tagged articles that readers will find interesting, useful and share, hence bettering your company’s position on the internet.</p>
+                </div>
+
+                <div className="relative top-[545px] right-32">
+                    <div className="absolute top-66 left-[408px]">
+                        <img src="/images/Arrow.png" alt="" className="-rotate-90" />
+                    </div>
+                    <div className="absolute top-69 left-1/12 w-91 h-0.5 bg-black"></div>
+                    <div className="absolute top-37 left-13 w-0.5 h-32 bg-black"></div>
+                </div>
+                <div className="absolute top-10/12 left-2/12">
+                    <p className="border border-black p-2 max-w-[349px]">Researching and writing relevant, semantically tagged articles that readers will find interesting, useful and share, hence bettering your company’s position on the internet.</p>
+                </div>
+
+            </div>
         </div>
     );
 };
