@@ -13,9 +13,22 @@ const App = () => {
                 <div className="absolute top-1/4 left-2/5">
                     <p className="border border-black p-2 max-w-[349px]">Researching and writing relevant, semantically tagged articles that readers will find interesting, useful and share, hence bettering your company’s position on the internet.</p>
                 </div>
-                <div class="absolute top-2/5 left-10/12 w-20 h-0.5 bg-black"></div>
+                <div className="relative">
+                    <div className="absolute top-86 left-[410px]">
+                        <img src="/images/Arrow.png" alt="" className="-rotate-90" />
+                    </div>
+                    <div className="absolute top-89 left-4/6 w-52 h-0.5 bg-black"></div>
+                    <div className="absolute top-89 left-full w-0.5 h-6 bg-black"></div>
+                </div>
                 <div className="absolute top-96 left-1/5">
                     <p className="border border-black p-2 max-w-[349px]">Researching and writing relevant, semantically tagged articles that readers will find interesting, useful and share, hence bettering your company’s position on the internet.</p>
+                </div>
+                <div className="relative top-32 -left-17">
+                    <div className="absolute top-86 left-[410px]">
+                        <img src="/images/Arrow.png" alt="" className="-rotate-90" />
+                    </div>
+                    <div className="absolute top-89 left-4/6 w-52 h-0.5 bg-black"></div>
+                    {/* <div className="absolute top-89 left-full w-0.5 h-6 bg-black"></div> */}
                 </div>
                 <div className="absolute top-9/12 left-1/5">
                     <p className="border border-black p-2 max-w-[349px]">Researching and writing relevant, semantically tagged articles that readers will find interesting, useful and share, hence bettering your company’s position on the internet.</p>
