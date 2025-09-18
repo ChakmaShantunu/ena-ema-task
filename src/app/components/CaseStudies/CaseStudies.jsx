@@ -19,6 +19,15 @@ const container = {
     visible: { transition: { staggerChildren: 0.3 } }, // stagger between cards
 };
 
+const textVariants = {
+    initial: { y: 0, opacity: 1 },
+    hover: {
+        y: [-0, -5, 5, 0],
+        opacity: [1, 0, 0, 1],
+
+    }
+};
+
 export default function CaseStudies() {
     return (
         <div>
@@ -83,14 +92,22 @@ export default function CaseStudies() {
                 whileInView={{ opacity: 1, y: 0, transition: { duration: 0.6 } }}
                 viewport={{ once: true }}
             >
-                <button
+                <motion.button
+                    initial="initial"
+                    whileHover="hover"
                     className="px-10 py-4 mb-32 bg-gradient-to-b from-[#1fffa5] to-[#ffffffd5] text-[#002013] font-medium rounded flex items-center justify-center gap-2 shadow-[inset_0_0_12px_#1fffa540,0_4px_12px_#ffffff80] transition-all duration-300 ease-in-out hover:shadow-[inset_0_0_18px_#1fffa540,0_6px_16px_#ffffff80] hover:scale-[1.02]"
                 >
-                    I want similar results
-                    <span>
+                    <motion.span
+                        variants={textVariants}
+                        transition={{ duration: 0.2, ease: "easeInOut" }}
+                    >I want similar results</motion.span>
+                    <motion.span
+                        variants={textVariants}
+                        transition={{ duration: 0.3, ease: "easeInOut" }}
+                    >
                         <img src="/images/arrow.png" alt="" />
-                    </span>
-                </button>
+                    </motion.span>
+                </motion.button>
             </motion.div>
         </div>
     );

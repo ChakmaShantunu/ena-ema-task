@@ -56,6 +56,15 @@ export default function Pricing() {
         visible: { transition: { staggerChildren: 0.2 } }, // stagger animation for cards
     };
 
+    const textVariants = {
+        initial: { y: 0, opacity: 1 },
+        hover: {
+            y: [-0, -15, 15, 0],
+            opacity: [1, 0, 0, 1],
+
+        }
+    };
+
     return (
         <div className='lg:max-w-[1440px] mx-auto px-4 lg:px-0'>
             <motion.div
@@ -119,7 +128,9 @@ export default function Pricing() {
                             </ul>
 
                             <div className="mt-6 flex justify-center items-center">
-                                <button
+                                <motion.button
+                                    initial="initial"
+                                    whileHover="hover"
                                     className="general-sans w-full h-[54px] bg-[#003d25] text-secondary font-medium rounded flex items-center justify-center gap-2 
               group-hover:text-[#002013] transition-all duration-300 ease-in-out 
               group-hover:bg-gradient-to-b group-hover:from-[#1fffa5] group-hover:to-[#ffffffd5] 
@@ -127,11 +138,17 @@ export default function Pricing() {
               group-hover:shadow-[inset_0_0_18px_#1fffa540,0_6px_16px_#ffffff80] 
               group-hover:scale-[1.02] cursor-pointer"
                                 >
-                                    Start My Project
-                                    <span>
+                                    <motion.span
+                                        variants={textVariants}
+                                        transition={{ duration: 0.2, ease: "easeInOut" }}
+                                    >Start My Project</motion.span>
+                                    <motion.span
+                                        variants={textVariants}
+                                        transition={{ duration: 0.3, ease: "easeInOut" }}
+                                    >
                                         <FaArrowRight />
-                                    </span>
-                                </button>
+                                    </motion.span>
+                                </motion.button>
                             </div>
                         </div>
                     </motion.div>

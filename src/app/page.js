@@ -10,6 +10,7 @@ import AboutUs from "./components/AboutUs/AboutUs";
 import FaqSection from "./components/FaqSection/FaqSection";
 import Visitors from "./components/Visitors/Visitors";
 import Footer from "./Footer/Footer";
+import DigitalMarketing from "./components/DigitalMarketing/DigitalMarketing";
 
 
 export default function Home() {
@@ -32,6 +33,7 @@ export default function Home() {
         <AboutUs></AboutUs>
         <FaqSection></FaqSection>
         <Visitors></Visitors>
+        <DigitalMarketing></DigitalMarketing>
       </div>
       <Footer></Footer>
     </div>

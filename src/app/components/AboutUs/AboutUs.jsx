@@ -90,14 +90,18 @@ export default function AboutUs() {
                                 viewport={{ once: false }}
                                 variants={zoomUp}
                             >
-                                <div className="bg-[#192420] w-full md:h-[262px] lg:[262px] rounded-xl p-6 h-full flex flex-col justify-between">
+                                <div className="bg-[#192420] w-full h-full md:h-[262px] lg:h-[262px] rounded-xl p-6 flex flex-col justify-between">
                                     {/* 5-star rating */}
                                     <div className="flex mb-3">
                                         {Array.from({ length: f.rating }).map((_, i) => (
-                                            <span key={i} className="text-secondary text-lg">★</span>
+                                            <span key={i} className="text-secondary text-lg">
+                                                ★
+                                            </span>
                                         ))}
                                         {Array.from({ length: 5 - f.rating }).map((_, i) => (
-                                            <span key={i} className="text-gray-600 text-lg">★</span>
+                                            <span key={i} className="text-gray-600 text-lg">
+                                                ★
+                                            </span>
                                         ))}
                                     </div>
 
@@ -106,10 +110,16 @@ export default function AboutUs() {
 
                                     {/* User info */}
                                     <div className="flex items-center gap-4">
-                                        <img src={f.image} alt={f.name} />
+                                        <img
+                                            src={f.image}
+                                            alt={f.name}
+                                            className="w-12 h-12 rounded-full object-cover"
+                                        />
                                         <div className="text-left">
                                             <p className="general-sans font-semibold">{f.name}</p>
-                                            <p className="general-sans text-gray-400 text-sm">{f.position}</p>
+                                            <p className="general-sans text-gray-400 text-sm">
+                                                {f.position}
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
